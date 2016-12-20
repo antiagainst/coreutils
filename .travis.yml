@@ -3,22 +3,22 @@ matrix:
   include:
     - rust: stable
       os: linux
-      env: FEATURES=''
+      env: FEATURES=unix
     - rust: stable
       os: osx
-      env: FEATURES=''
+      env: FEATURES=unix
     - rust: beta
       os: linux
-      env: FEATURES=''
+      env: FEATURES=unix
     - rust: beta
       os: osx
-      env: FEATURES=''
+      env: FEATURES=unix
     - rust: nightly
       os: linux
-      env: FEATURES=nightly
+      env: FEATURES="unix nightly"
     - rust: nightly
       os: osx
-      env: FEATURES=nightly
+      env: FEATURES="unix nightly"
 cache:
  directories:
   - $HOME/.cargo

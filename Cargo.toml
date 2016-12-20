@@ -35,10 +35,16 @@ unix = [
   "uptime",
   "users",
   "who",
+
+  # All generic utilities
+  "generic"
+]
+windows = [
+  # All generic utilities
+  "generic"
 ]
 # Feature "fuchsia" contains the exclusive list of utilities
-# that can be compiled and run on Fuchsia. Should be built
-# with --no-default-features when selecting this feature.
+# that can be compiled and run on Fuchsia.
 # TODO: merge with "unix" to avoid duplication once we support
 # all utilities in that feature.
 fuchsia = [
@@ -130,7 +136,7 @@ generic = [
 ]
 test_unimplemented = []
 nightly = []
-default = ["generic", "unix"]
+default = ["generic"]
 
 [dependencies]
 uucore   = { path="src/uucore" }

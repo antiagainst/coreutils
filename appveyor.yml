@@ -41,7 +41,7 @@ artifacts:
 build: false
 
 test_script:
-  - cargo test --no-fail-fast --features "nightly generic" --no-default-features
+  - cargo test --no-fail-fast --features "windows nightly"
 
 cache:
   - c:\cached
